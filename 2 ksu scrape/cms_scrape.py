@@ -5,7 +5,7 @@ To use this code, you will first need to install the three packages being import
 from bs4 import BeautifulSoup
 import requests
 import csv
-source = requests.get('http://coreyms.com').text
+source = requests.get('https://www.kennesaw.edu/news/news-releases/index.php?&p=').text
 soup = BeautifulSoup(source, 'lxml')
 #print(soup.prettify())
 article = soup.find('article')
